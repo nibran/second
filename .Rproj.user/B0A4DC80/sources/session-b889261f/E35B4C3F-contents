@@ -1,0 +1,36 @@
+library(data.table)
+library(lubridate)
+library(ggplot2)
+library(Hmisc)
+library(RFM)
+
+data <- fread("transactions.csv")
+
+RFMfunction(data = data, 20,60, 20)
+
+
+## Create a function called addFirstTwo(vec) that adds the first two elements of a 
+#vector.
+
+addFirstTwo <- function(vec) {
+  browser()
+  a <- vec[1]
+  b <- vec[2]
+  result <- a+b
+  return(result)
+}
+
+addFirstTwo(c(1, "z"))
+
+
+mean(1:10)
+traceback()
+
+install.packages("RUnit")
+install.packages("testthat")
+library(RUnit)
+library(testthat)
+
+#Set up a unit testing framework
+usethis::use_testthat()
+

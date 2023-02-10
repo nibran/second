@@ -1,0 +1,13 @@
+#How to initialize Git
+
+#1. open Terminal and enter git init
+
+#How to add ALL files to the local repository
+
+git add .
+
+#If you want the changes to go live in Terminal 
+
+git commit -m "first commit"
+
+install.packages("Rtools")

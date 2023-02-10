@@ -1,0 +1,16 @@
+library(doParallel)
+library(foreach)
+library(data.table)
+library(Hmisc)
+library(lubridate)
+library(RSQLite)
+library(compiler)
+library(microbenchmark)
+library(base)
+library(profvis)
+
+system.time(is.na(c(0,2)))
+
+system.time(base::is.na(c(0,2)))
+
+microbenchmark({is.na(c(0,2))}, {base::is.na(c(0,2))}, times = 20L)

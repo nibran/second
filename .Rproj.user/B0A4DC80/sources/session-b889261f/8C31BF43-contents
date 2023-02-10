@@ -1,0 +1,7 @@
+
+usethis::use_testthat("max is always higher than others"){
+  library(usethis)
+  library(devtools)
+expect_true(churnprob <= 0.9405975);
+  expect_equal(CustomerChurnProb[,CustomerId] == 15662641, FALSE)}
+
